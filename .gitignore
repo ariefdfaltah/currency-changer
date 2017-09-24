@@ -8,6 +8,10 @@
 
 # production
 /build
+
+
+# IntelliJ
+*.iml
 /.idea
 # misc
 .DS_Store
