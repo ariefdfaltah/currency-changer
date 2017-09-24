@@ -1,0 +1,51 @@
+
+table {
+width: 100%;
+}
+
+thead, tbody, tr, td, th { display: block; }
+
+tr:after {
+content: ' ';
+display: block;
+visibility: hidden;
+clear: both;
+}
+
+thead th {
+height: 65px;
+
+/*text-align: left;*/
+}
+
+tbody {
+overflow-y: auto;
+}
+
+thead {
+/* fallback */
+}
+
+
+tbody td, thead th {
+width: calc(100%/6);
+float: left;
+}
+
+@media screen and ( min-height: 600px) {
+tbody {
+height: 75vh;
+}
+}
+
+@media screen and ( min-height: 1024px) {
+tbody {
+height: 85vh;
+}
+}
+
+@media screen and ( min-width: 1000px) {
+thead th {
+height: 50px;
+}
+}
